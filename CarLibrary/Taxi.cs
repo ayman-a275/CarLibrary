@@ -15,8 +15,8 @@ namespace CarLibrary
         public double EnergyLevel { get; set; }
         public double MaxEnergy { get; set; }
 
-        public Taxi(string brand, string model, string licensePlate, int odometer, bool isEngineRunning, bool meterStarted, double startPrice, double pricePerKm, double energyLevel, double maxEnergy)
-            : base(brand, model, licensePlate, odometer, isEngineRunning)
+        public Taxi(string brand, string model, string licensePlate, int odometer, bool meterStarted, double startPrice, double pricePerKm, double energyLevel, double maxEnergy)
+            : base(brand, model, licensePlate, odometer)
         {
             MeterStarted = meterStarted;
             StartPrice = startPrice;
