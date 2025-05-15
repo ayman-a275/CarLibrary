@@ -14,7 +14,7 @@ namespace CarLibrary
         public double KmPerLiter { get; set; }
 
         public FuelCar(string brand, string model, string licensePlate, int odometer, bool isEngineRunning, double energyLevel, double maxEnergy, double kmPerLiter)
-            : base(brand, model, licensePlate, odometer, isEngineRunning)
+            : base(brand, model, licensePlate, odometer)
         {
             EnergyLevel = energyLevel;
             MaxEnergy = maxEnergy;
