@@ -26,7 +26,7 @@ namespace CarLibrary
 
         public override bool CanDrive(double km)
         {
-            if (!IsEngineRunning || CalculateEnergyUsed(km) > EnergyLevel)
+            if (!IsEngineRunning || CalculateEnergyUsed(km) >= EnergyLevel)
                 return false;
 
             return true;
