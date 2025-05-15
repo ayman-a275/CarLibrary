@@ -8,16 +8,14 @@
         public string LicensePlate { get; set; }
         public int Odometer { get; set; }
         public bool IsEngineRunning { get; set; }
-        public double EnergyLevel { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public double MaxEnergy { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        public Car(string brand, string model, string licensePlate, int odometer, bool isEngineRunning)
+        public Car(string brand, string model, string licensePlate, int odometer)
         {
             Brand = brand;
             Model = model;
             LicensePlate = licensePlate;
             Odometer = odometer;
-            IsEngineRunning = isEngineRunning;
+            IsEngineRunning = false;
         }
 
         public void StartEngine()
