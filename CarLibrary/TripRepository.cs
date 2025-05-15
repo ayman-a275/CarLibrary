@@ -8,7 +8,7 @@ namespace CarLibrary
 {
     public class TripRepository : ITripRepository
     {
-        public List<Trip> trips;
+        public List<Trip> trips = new List<Trip>();
         public void AddTrip(Trip trip)
         {
             trips.Add(trip);

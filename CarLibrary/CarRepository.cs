@@ -8,7 +8,7 @@ namespace CarLibrary
 {
     public class CarRepository : ICarRepository
     {
-        public List<Car>? cars;
+        public List<Car>? cars = new List<Car>();
         public void AddCar(Car car)
         {
             cars.Add(car);
